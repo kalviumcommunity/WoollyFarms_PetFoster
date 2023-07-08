@@ -1,0 +1,90 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #f5f2ea;
+  border-bottom: 2px solid #ebe5e0;
+}
+
+.flex {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header .flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .flex .logo {
+  font-size: 2.5rem;
+  color: #2f2f2f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.adopt-now-btn {
+  border-radius: 20px;
+  padding: 1rem;
+  width: 120px;
+  background-color: #9d61f1;
+  font-family: poppins;
+  border: none;
+  color: #f5f2ea;
+}
+
+.header .flex .navbar a {
+  font-family: poppins;
+  margin-left: 2rem;
+  color: #2f2f2f;
+  font-size: 1.5rem;
+  /* font-weight: 700; */
+  text-decoration: none;
+}
+#menu-btn {
+  display: none;
+}
+
+.header .flex .navbar a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+    font-size: large;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid #3d3c42;
+    border-bottom: 0.1rem solid #3d3c42;
+    background-color: #324055;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .flex .navbar.open {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .flex .navbar a {
+    display: block;
+    margin: 2rem;
+  }
+
+  .home .row .content h3 {
+    font-size: 6rem;
+  }
+}
