@@ -8,11 +8,13 @@
 
 .hero-text {
   padding-top: 8rem;
+  padding-left: 15rem;
   font-size: 9rem;
   font-family: "Archivo Black", sans-serif;
   width: 95%;
   line-height: 100px;
   position: absolute;
+  /* text-align: center; */
 }
 
 .ctc-flow {
@@ -40,7 +42,7 @@
 
 .view {
   padding: 2rem;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +58,7 @@
     width: fit-content;
     line-height: 60px;
     position: sticky;
+    text-align: center;
   }
   .ctc-flow {
     height: 10vh;
@@ -77,6 +80,7 @@
   height: 50px;
   border-radius: 100%;
   background-color: #9d61f1;
+  cursor: pointer;
 }
 
 #cta {

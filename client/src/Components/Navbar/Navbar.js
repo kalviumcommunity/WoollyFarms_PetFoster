@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setisOpen] = useState(false);
+  const goTo = useNavigate();
 
   const handleMenu = () => {
     setisOpen(!isOpen);
@@ -13,19 +15,27 @@ const Navbar = () => {
   return (
     <header className="header">
       <section className="flex">
-        <a href="#home" className="logo">
+        <Link to="/" className="logo">
           PetFoster
-        </a>
+        </Link>
         <nav className={`navbar ${isOpen ? "open" : ""}`}>
-          <a href="#about">About us</a>
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo(0, 500);
+              goTo("/");
+            }}
+          >
+            About us
+          </Link>
           <a href="#joinAbout">Our Program</a>
           <a href="#bAbout">Blog</a>
           <a href="#pricing">Contact</a>
-          <a href="/">
+          <Link to="/category">
             <button href="#contact" className="adopt-now-btn">
               Adopt Now
             </button>
-          </a>
+          </Link>
         </nav>
         <div
           id="menu-btn"

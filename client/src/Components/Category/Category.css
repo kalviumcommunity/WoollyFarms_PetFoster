@@ -1,0 +1,15 @@
+.category {
+  padding-top: 8rem;
+  background-color: #f5f2ea;
+  height: 88.8vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+  gap: 5rem;
+}
