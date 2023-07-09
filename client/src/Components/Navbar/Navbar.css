@@ -36,6 +36,7 @@
   font-family: poppins;
   border: none;
   color: #f5f2ea;
+  cursor: pointer;
 }
 
 .header .flex .navbar a {
@@ -51,7 +52,7 @@
 }
 
 .header .flex .navbar a:hover {
-  color: #fff;
+  color: #9d61f1;
 }
 
 @media (max-width: 768px) {
