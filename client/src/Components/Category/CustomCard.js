@@ -2,7 +2,7 @@ import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 import PropTypes from "prop-types";
 
 const CustomCard = ({ title, category, imageSrc, appIconSrc, buttonText }) => (
-  <Card css={{ w: "42%", h: "420px" }}>
+  <Card css={{ h: "420px", w: "600px", cursor: "default" }}>
     <Card.Header css={{ position: "absolute", zIndex: 1, padding: "20px" }}>
       <Col>
         <Text size={40} weight="bold" transform="uppercase" color="#9E9E9E">

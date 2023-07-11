@@ -1,0 +1,43 @@
+.adopt {
+  padding-top: 8rem;
+  background-color: #f5f2ea;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: x-large;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.apply-filters-button {
+  align-self: flex-start;
+}
+
+.animal-container {
+  padding: 5rem 15rem;
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  gap: 4rem;
+}
+
+.animal-container > div {
+  margin-bottom: 1rem;
+}
+
+.animal-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.animal-info {
+  margin-bottom: 0.5rem;
+}

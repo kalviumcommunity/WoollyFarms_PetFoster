@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import "./Category.css";
 import CustomCard from "./CustomCard";
@@ -26,20 +27,24 @@ const Category = () => {
           friends here!
         </h1>
         <div className="category-container">
-          <CustomCard
-            title="dogs"
-            imageSrc={category_dog}
-            appIconSrc={dog_icon}
-            category="Unleash love and find your furry soulmate among our charming dogs."
-            buttonText="Woof"
-          />
-          <CustomCard
-            title="cats"
-            imageSrc={category_cat}
-            appIconSrc={cat_icon}
-            category="Find your purr-fect match and experience feline love with our enchanting cats."
-            buttonText="meow"
-          />
+          <Link to="/adopt/dog">
+            <CustomCard
+              title="dogs"
+              imageSrc={category_dog}
+              appIconSrc={dog_icon}
+              category="Unleash love and find your furry soulmate among our charming dogs."
+              buttonText="Woof"
+            />
+          </Link>
+          <Link to="/adopt/cat">
+            <CustomCard
+              title="cats"
+              imageSrc={category_cat}
+              appIconSrc={cat_icon}
+              category="Find your purr-fect match and experience feline love with our enchanting cats."
+              buttonText="meow"
+            />
+          </Link>
         </div>
       </div>
     </div>
