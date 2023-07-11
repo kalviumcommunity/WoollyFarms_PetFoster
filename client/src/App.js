@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home";
 // import Adopt from "./Components/Category/Category";
 import Adopt from "./Components/Adopt/Adopt";
 import Category from "./Components/Category/Category";
+import Details from "./Components/Details/Details";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route>
           <Route path="/category" element={<Category />} />
           <Route path="/adopt/:animalType" element={<Adopt />} />
+          <Route path="/adopt/:animalType/:animalID" element={<Details />} />
         </Route>
       </Routes>
     </div>

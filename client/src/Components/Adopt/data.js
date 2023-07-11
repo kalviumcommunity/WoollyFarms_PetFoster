@@ -3,6 +3,7 @@ import cat from "../../Assets/category-cat.png";
 
 const animals = [
   {
+    id: 1,
     animalType: "dog",
     name: "Buddy",
     image: dog,
@@ -17,6 +18,7 @@ const animals = [
     email: "buddy@example.com",
   },
   {
+    id: 2,
     animalType: "dog",
     name: "Bwrgf3ruddy",
     image: dog,
@@ -31,6 +33,7 @@ const animals = [
     email: "buddy@example.com",
   },
   {
+    id: 3,
     animalType: "dog",
     name: "Max",
     image: dog,
@@ -45,6 +48,7 @@ const animals = [
     email: "max@example.com",
   },
   {
+    id: 4,
     animalType: "dog",
     name: "Max",
     image: dog,
@@ -59,6 +63,7 @@ const animals = [
     email: "max@example.com",
   },
   {
+    id: 1,
     animalType: "dog",
     name: "Max",
     image: dog,
@@ -73,6 +78,7 @@ const animals = [
     email: "max@example.com",
   },
   {
+    id: 1,
     animalType: "cat",
     name: "Whiskers",
     image: cat,
@@ -87,6 +93,7 @@ const animals = [
     email: "whiskers@example.com",
   },
   {
+    id: 2,
     animalType: "cat",
     name: "coco",
     image: cat,
@@ -101,6 +108,7 @@ const animals = [
     email: "whiskers@example.com",
   },
   {
+    id: 3,
     animalType: "cat",
     name: "Oscar",
     image: cat,
