@@ -1,0 +1,53 @@
+.details {
+  padding-top: 8rem;
+  background-color: #f5f2ea;
+  height: 88.8vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.details-left {
+  width: 40%;
+}
+
+.img-container {
+  padding: 5rem 17rem;
+}
+.pet-image {
+  border-radius: 20px;
+  height: 350px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-left: 17rem;
+  height: 125px;
+  width: 280px;
+  background-color: #9d61f1;
+  padding: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 50%;
+}
+
+.contact-icons > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.details-right {
+  width: 60%;
+}

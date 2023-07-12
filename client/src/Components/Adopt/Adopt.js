@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import animals from "./data";
 import { Input, Spacer, Card, Text, Row, Col, Button } from "@nextui-org/react";
@@ -115,26 +115,28 @@ const Adopt = () => {
                     </Col>
                     <Col>
                       <Row justify="flex-end">
-                        <Button
-                          flat
-                          auto
-                          rounded
-                          color="secondary"
-                          css={{
-                            marginRight: "40px",
-                            marginTop: "20px",
-                            padding: "20px",
-                          }}
-                        >
-                          <Text
-                            css={{ color: "inherit" }}
-                            size={12}
-                            weight="bold"
-                            transform="uppercase"
+                        <Link to={`/adopt/${animalType}/${animal.id}`}>
+                          <Button
+                            flat
+                            auto
+                            rounded
+                            color="secondary"
+                            css={{
+                              marginRight: "40px",
+                              marginTop: "20px",
+                              padding: "20px",
+                            }}
                           >
-                            Adopt me
-                          </Text>
-                        </Button>
+                            <Text
+                              css={{ color: "inherit" }}
+                              size={12}
+                              weight="bold"
+                              transform="uppercase"
+                            >
+                              Adopt me
+                            </Text>
+                          </Button>
+                        </Link>
                       </Row>
                     </Col>
                   </Row>
