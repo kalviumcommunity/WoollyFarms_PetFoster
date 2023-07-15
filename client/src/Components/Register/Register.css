@@ -1,0 +1,112 @@
+.register-container {
+  padding-top: 8rem;
+  background-color: #f5f2ea;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ctc-flow {
+  width: 50%;
+}
+
+.cat {
+  position: absolute;
+  height: 90vh;
+  left: 55vw;
+  /* right: 0; */
+  /* top: -9rem; */
+}
+
+.register-form-error {
+  color: red;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.register-form-container {
+  width: 100%;
+  padding: 5rem 16rem 16rem 16rem;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .register-form-container {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.register-form-container h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: Black;
+  text-align: left;
+  font-family: "poppins";
+}
+
+.register-form-container p {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  font-family: "poppins";
+}
+
+.register-form-container input {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: rgba(121, 56, 178, 0.42);
+  color: black;
+  font-family: "Poppins", monospace;
+}
+
+.register-form-container button {
+  display: block;
+  margin: 1.875rem 0;
+  /* width: 120%; */
+  max-width: 400px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(121, 56, 178, 0.42);
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: "Poppins", monospace;
+}
+
+@media (max-width: 768px) {
+  .register-form-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .register-form-container {
+    padding: 20px;
+  }
+
+  .register-form-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .register-form-container input {
+    font-size: 1rem;
+  }
+
+  .register-form-container button {
+    font-size: 1rem;
+  }
+
+  .register-form-container p {
+    font-size: 1rem;
+  }
+}
