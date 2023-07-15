@@ -1,8 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import animals from "../Adopt/data";
 import Navbar from "../Navbar/Navbar";
 import "./Details.css";
+// import SignIn from "../Register/SignIn";
 
 const Details = () => {
   const { animalType, animalID } = useParams();
@@ -40,7 +41,10 @@ const Details = () => {
               for adoption?
             </h1>
             <div className="contact-icons">
-              <button>Contact Owner</button>
+              <Link to="/signin">
+                <button>Contact Owner</button>
+              </Link>
+
               {/* <img src={pet.image} alt="" />
               <img src={pet.image} alt="" /> */}
             </div>
